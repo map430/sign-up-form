@@ -10,16 +10,21 @@
   <body>
     <div class="container">
       <div class="containerLeft">
+        <div class="logoBand"> </div>
+        <div class="logoContainer">
+            <img src="images/odin-lined.png" class="logo">
+            <span class="brandName">Odin</span>
+        </div>
         <img src="images/leaves.jpg" class="imageMain" />
       </div>
       <div class="containerRight">
         <div class="containerRightTop">
-          <p>
+          <p class="mainLine1">
             This is not a real online service! You know you need something like
             this in your life to help you realize your deepest dreams. Sign up
             now to get started.
           </p>
-          <p>You know you want to.</p>
+          <p class="mainLine2">You know you want to.</p>
         </div>
         <div class="containerRightMiddle">Some content</div>
         <div class="containerRightBottom"></div>
@@ -30,7 +35,7 @@
         window.addEventListener("DOMContentLoaded", adjustHeight);
         function adjustHeight () {
             const continerLeft = document.querySelector(".containerLeft");
-            const containerRight = document.querySelector("containerLeft");
+            const containerRight = document.querySelector(".containerRight");
 
             const containerLeftHeight = containerLeft.offsetHeight;
             containerRight.style.height = containerLeftHeight + "px";
