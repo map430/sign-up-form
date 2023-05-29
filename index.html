@@ -10,10 +10,10 @@
   <body>
     <div class="container">
       <div class="containerLeft">
-        <div class="logoBand"> </div>
+        <div class="logoBand"></div>
         <div class="logoContainer">
-            <img src="images/odin-lined.png" class="logo">
-            <span class="brandName">Odin</span>
+          <img src="images/odin-lined.png" class="logo" />
+          <span class="brandName">Odin</span>
         </div>
         <img src="images/leaves.jpg" class="imageMain" />
       </div>
@@ -22,33 +22,41 @@
           <p class="mainLine1">
             This is not a real online service! You know you need something like
             this in your life to help you realize your deepest dreams. Sign up
-            now to get started.
+            <em>now</em> to get started.
           </p>
-          <p class="mainLine2">You know you want to.</p>
+          <p class="mainLine2">You <em>know</em> you want to.</p>
         </div>
-        <div class="containerRightMiddle">Some content</div>
-        <div class="containerRightBottom"></div>
+        <div class="containerRightMiddle">
+          <span class="middleTitle">Let's do this!</span>
+        </div>
+        <div class="containerRightBottom">
+          <button type="submit">Create Account</button>
+          <div>
+            <span class="rightBottom1">Already have an account?</span>
+            <span class="rightBottom2">Log in</span>
+          </div>
+        </div>
       </div>
     </div>
 
     <script>
-        window.addEventListener("DOMContentLoaded", adjustHeight);
-        function adjustHeight () {
-            const continerLeft = document.querySelector(".containerLeft");
-            const containerRight = document.querySelector(".containerRight");
+      // window.addEventListener("DOMContentLoaded", adjustHeight);
+      // function adjustHeight () {
+      //     const continerLeft = document.querySelector(".containerLeft");
+      //     const containerRight = document.querySelector(".containerRight");
 
-            const containerLeftHeight = containerLeft.offsetHeight;
-            containerRight.style.height = containerLeftHeight + "px";
-        }
+      //     const containerLeftHeight = containerLeft.offsetHeight;
+      //     containerRight.style.height = containerLeftHeight + "px";
+      // }
 
-        window.addEventListener("DOMContentLoaded", adjustWidth);
-        function adjustWidth () {
-            const containerLeft = document.querySelector(".containerLeft");
-            const imageMain = document.querySelector(".imageMain");
+      // window.addEventListener("DOMContentLoaded", adjustWidth);
+      // function adjustWidth () {
+      //     const containerLeft = document.querySelector(".containerLeft");
+      //     const imageMain = document.querySelector(".imageMain");
 
-            const containerLeftWidth = containerLeft.offsetWidth;
-            imageMain.style.width = containerLeftWidth + "px";
-        }
+      //     const containerLeftWidth = containerLeft.offsetWidth;
+      //     imageMain.style.width = containerLeftWidth + "px";
+      // }
     </script>
   </body>
 </html>
