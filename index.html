@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="containerLeft">
+        <img src="images/leaves.jpg" class="imageMain" />
+      </div>
+      <div class="containerRight">
+        <div class="containerRightTop">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            now to get started.
+          </p>
+          <p>You know you want to.</p>
+        </div>
+        <div class="containerRightMiddle">Some content</div>
+        <div class="containerRightBottom"></div>
+      </div>
+    </div>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", adjustHeight);
+        function adjustHeight () {
+            const continerLeft = document.querySelector(".containerLeft");
+            const containerRight = document.querySelector("containerLeft");
+
+            const containerLeftHeight = containerLeft.offsetHeight;
+            containerRight.style.height = containerLeftHeight + "px";
+        }
+
+        window.addEventListener("DOMContentLoaded", adjustWidth);
+        function adjustWidth () {
+            const containerLeft = document.querySelector(".containerLeft");
+            const imageMain = document.querySelector(".imageMain");
+
+            const containerLeftWidth = containerLeft.offsetWidth;
+            imageMain.style.width = containerLeftWidth + "px";
+        }
+    </script>
+  </body>
+</html>

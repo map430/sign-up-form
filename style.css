@@ -1,0 +1,55 @@
+@font-face {
+    font-family: norse;
+    src: url(Norse-Bold.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.containerLeft {
+    width: 500px;
+}
+
+.imageMain {
+   padding: 0px;
+   margin: 0px;
+   height: auto;
+}
+
+.containerRight > * {
+    flex-basis: 33.33%;
+}
+
+.containerRightTop, .containerRightBottom {
+    background-color: #EEEEEE;
+  
+}
+
+.containerRight {
+    display: flex;
+    flex-direction: column;
+
+    font-family: Roboto, sans-serif;
+}
+
+.containerRightTop {
+    font-size: 20px;
+}
+
+.containerRightMiddle {
+    box-shadow: 0px 5px 10px 0px lightgrey;
+    margin-bottom: 5px;
+}
+
+
+
+
+
